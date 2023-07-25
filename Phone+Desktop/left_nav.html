@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Navbar</title>
+    <link href="uicons-regular-rounded.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-color: #e2e9f7;
+        }
+
+        .side-nav {
+            width: 250px;
+            height: 100%;
+            background-color: #000aaa;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 30px;
+        }
+
+        .logo {
+            display: block;
+            margin-bottom: 130px;
+        }
+
+        .logo-img {
+            width: 150px;
+        }
+
+        .nav-links {
+            position: relative;
+            list-style: none;
+            width: 190px;
+            height: 360px;
+            position: relative;
+            border-radius: 6px;
+            background-color: #ffffff30;
+        }
+
+        .nav-links li {
+            padding: 10px 0;
+        }
+
+        .nav-links li:hover {
+            cursor: pointer;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li a .icon {
+            margin: 0 20px 0 0;
+            filter: invert(0);
+        }
+
+        .active {
+            background-color: #ffffff;
+            width: 90%;
+            height: 47px;
+            position: absolute;
+            left: 5%;
+            top: 2%;
+            z-index: -1;
+            border-radius: 6px;
+            box-shadow: 0 0 50px rgb(255, 255, 255);
+            display: none;
+            transition: 0.3s;
+        }
+
+        .nav-links li:hover a {
+            color: #0d74f5;
+            transition: 0.3s;
+        }
+
+        .nav-links li:hover .icon {
+            fill: #0d74f5;
+        }
+
+        .nav-links li:hover~.active {
+            display: block;
+        }
+
+        .nav-links li:nth-child(1):hover~.active {
+            top: 2.3%;
+        }
+
+        .nav-links li:nth-child(2):hover~.active {
+            top: 18.5%;
+        }
+
+        .nav-links li:nth-child(3):hover~.active {
+            top: 35%;
+        }
+
+        .nav-links li:nth-child(4):hover~.active {
+            top: 52%;
+        }
+
+        .nav-links li:nth-child(5):hover~.active {
+            top: 68.5%;
+        }
+
+        .nav-links li:nth-child(6):hover~.active {
+            top: 84.8%;
+        }
+
+        .logo-icon {
+            display: none;
+            width: 44px;
+        }
+
+        /* -------------------------------for media device-------------------------------------- */
+
+        @media only screen and (max-width:600px) {
+            .side-nav {
+                width: 110px;
+            }
+
+            .logo-icon {
+                display: block;
+            }
+
+            .logo-img {
+                display: none;
+            }
+
+            .nav-links li a p {
+                display: none;
+            }
+
+            .nav-links li a i {
+                margin-right: 0px;
+            }
+
+            .nav-links li a {
+                justify-content: center;
+            }
+
+            .nav-links {
+                width: 90px;
+                position: absolute;
+                left: 10px;
+            }
+
+            @font-face {
+                font-family: "user";
+                src:
+                    url("icon/user.svg") format("svg");
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="" class="logo-img">
+                <img src="logo-icon.png" alt="" class="logo-icon">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><img src="icons/home.svg" alt="" class="icon" height="20" width="20">
+                        <p>Dashboard</p>
+                    </a></li>
+                <li><a href="#"><img src="icons/envelope.svg" alt="" class="icon" height="20" width="20">
+                        <p>Message</p>
+                    </a></li>
+                <li><a href="#"><img src="icons/user.svg" alt="" class="icon" height="20" width="20">
+                        <p>User</p>
+                    </a></li>
+                <li><a href="#"><img src="icons/file-medical-alt.svg" alt="" class="icon" height="20" width="20">
+                        <p>Rewards</p>
+                    </a></li>
+                <li><a href="#"><img src="icons/box-open.svg" alt="" class="icon" height="20" width="20">
+                        <p>Reports</p>
+                    </a></li>
+                <li><a href="#"><img src="icons/settings.svg" alt="" class="icon" height="20" width="20">
+                        <p>Settings</p>
+                    </a></li>
+                <div class="active"></div>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
