@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(190, 205, 255, 0.751);
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+}
+
+header {
+    position: relative;
+    left: 20%;
+    margin: 0;
+    width: 80%;
+    background-color: rgb(243, 146, 0);
+    color: white;
+    text-align: center;
+    padding: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 500%;
+    font-family: chiller;
+    transition: all 0.3s ease-in-out;
+}
+
+header p {
+    margin: 0;
+    font-size: 200%;
+    font-family: chiller;
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    margin: 0;
+    background-color: white;
+    color: rgb(12, 0, 106);
+    font-size: 150%;
+    width: 80%;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.406);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0.8vw;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+nav ul li:hover {
+    background-color: rgba(243, 146, 0, 0.45);
+    width: 100%;
+    height: 47px;
+    z-index: -1;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(243, 146, 0);
+    padding: 1%;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(12, 0, 106);
+    float: left;
+    position: fixed;
+    width: 20%;
+    text-align: center;
+    border-top-right-radius: 5px;
+    z-index: 2;
+    border-bottom-right-radius: 5px;
+}
+
+.left hr {
+    width: 90%;
+}
+
+.left .logo_t {
+    margin: 5%;
+    width: 60%;
+}
+
+.left ul {
+    padding: 5% 10% 5% 10%;
+    margin: 10%;
+    text-align: left;
+    list-style: none;
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.left li {
+    border-radius: 0.5vw;
+    padding: 5%;
+    position: relative;
+    transition: all 0.3s;
+    position: top;
+    transition: all 0.5s ease-in ease-out;
+}
+
+.left li:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(12, 0, 106);
+    box-shadow: 0px 0px 50px white;
+}
+
+.left li p {
+    display: inline;
+    color: white;
+    transition: all 0.3s;
+}
+
+.left a {
+    margin-left: 10%;
+    position: relative;
+    bottom: 0.5vw;
+    text-decoration: none;
+    font-size: 125%;
+}
+
+.left img {
+    margin: 0;
+    width: 20%;
+}
+
+.left li:hover p {
+    cursor: pointer;
+    color: rgb(12, 0, 106);
+}
+
+
+.smallLogos1 {
+    opacity: 1;
+}
+
+.smallLogos {
+    position: absolute;
+    left: 5%;
+    transition: opacity 0.3s, display 0.3s;
+}
+
+.left li:hover .smallLogos {
+    display: none;
+}
+
+.left li:hover .smallLogos {
+    opacity: 0;
+}
+
+main {
+    position: relative;
+    left: 20%;
+    padding: 5% 5%;
+    width: 80%;
+    border-left: solid 1px grey;
+    font-size: 120%;
+    background-color: rgb(190, 205, 255);
+    box-shadow: 0 10px 10px gray;
+    text-align: justify;
+}

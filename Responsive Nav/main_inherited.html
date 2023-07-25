@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Navbar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(190, 205, 255);
+            font-family: Arial, sans-serif;
+            font-size: 1vw;
+        }
+
+        header {
+            margin: 0;
+            background-color: rgb(243, 146, 0);
+            color: white;
+            text-align: center;
+            padding: 3%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 500%;
+            font-family: chiller;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 125%;
+        }
+
+        nav {
+            margin: 0;
+            background-color: white;
+            color: rgb(12, 0, 106);
+            font-size: 125%;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 1%;
+        }
+
+        .left {
+            background-color: rgb(12, 0, 106);
+            float: left;
+            position: fixed;
+            width: 20%;
+            text-align: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .left hr {
+            width: 90%;
+        }
+
+        .left .logo_t {
+            margin: 5%;
+            width: 60%;
+        }
+
+        .left ul {
+            padding: 0 20% 0 20%;
+            text-align: left;
+            list-style: none;
+        }
+
+        .left li {
+            border-radius: 0.5vw;
+            padding: 5%;
+            position: relative;
+            transition: all 0.3s;
+            position: top;
+            transition: 0.5s;
+        }
+
+        .left li p {
+            display: inline;
+            color: white;
+        }
+
+        .left a {
+            margin-left: 10%;
+            position: relative;
+            bottom: 8px;
+            text-decoration: none;
+            font-size: 125%;
+        }
+
+        .left img {
+            margin: 0;
+            width: 20%;
+        }
+
+        .left li:hover p {
+            cursor: pointer;
+            color: rgb(12, 0, 106);
+            transition: all 0.5s;
+        }
+
+        .left li:hover {
+            cursor: pointer;
+            background-color: white;
+            color: rgb(12, 0, 106);
+            transition: all 0.5s;
+        }
+
+        .smallLogos1 {
+            opacity: 1;
+        }
+
+        .smallLogos {
+            position: absolute;
+            left: 5%;
+        }
+
+        .left li:hover .smallLogos {
+            display: none;
+        }
+
+        .left li:hover .smallLogos {
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        /* ----------------------------------------------------------------------------------------- 
+            For small screen devices
+*/
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>I'm Anurag</h1>
+        <p>a web developer</p>
+    </header>
+    <nav>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Courses</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Videos</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Notes</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">About us</a>
+    </nav>
+    <div class="left">
+        <img src="pics/logo_t.png" class="logo_t">
+        <!-- <img src="pics/logo_nt.png" class="logo_nt"> -->
+        <hr color="white">
+
+        <ul>
+            <li>
+                <img src="pics/dashboard1.png" class="smallLogos1">
+                <img src="pics/dashboard.png" class="smallLogos">
+                <a href="#">
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li>
+                <img src="pics/messages1.png" class="smallLogos1">
+                <img src="pics/messages.png" class="smallLogos">
+                <a href="#">
+                    <p>Messages</p>
+                </a>
+            </li>
+            <li>
+                <img src="pics/user1.png" class="smallLogos1">
+                <img src="pics/user.png" class="smallLogos">
+                <a href="#">
+                    <p>User</p>
+                </a>
+            </li>
+            <li>
+                <img src="pics/rewards1.png" class="smallLogos1">
+                <img src="pics/rewards.png" class="smallLogos">
+                <a href="#">
+                    <p>Rewards</p>
+                </a>
+            </li>
+            <li>
+                <img src="pics/reports1.png" class="smallLogos1">
+                <img src="pics/reports.png" class="smallLogos">
+                <a href="#">
+                    <p>Reports</p>
+                </a>
+            </li>
+            <li>
+                <img src="pics/settings1.png" class="smallLogos1">
+                <img src="pics/settings.png" class="smallLogos">
+                <a href="#">
+                    <p>Settings</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
